@@ -9,7 +9,7 @@ LABEL "Project"="earth"
 RUN yum install httpd wget unzip -y
 
 # Download the website template
-RUN wget https://www.tooplate.com/zip-templates/2113_earth.zip
+RUN wget https://www.tooplate.com/zip-templates/2113_earth.zip --no-check-certificate
 
 # Unzip the downloaded template
 RUN unzip 2113_earth.zip
