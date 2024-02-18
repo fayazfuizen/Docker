@@ -1,0 +1,11 @@
+version: '3'
+services:
+  earth:
+    image: kubefayaz/earth:v1
+    ports:
+      - "5085:80"
+  town:
+    image: kubefayaz/moderntown
+    ports:
+      - "5086:80"
+
